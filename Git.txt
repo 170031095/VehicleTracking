@@ -1,0 +1,101 @@
+1. DAY-1 (INTRODUCTION TO GIT)
+
+->Free and Open Source Software
+->It is distributed version control system
+
+COMMANDS USED IN GIT TO PUSH THE FILES USING TERMINAL
+i. New Brach Creating
+-> git branch B1
+
+ii. To Move from "Master" branch to "B1"
+-> git checkout B1 
+-> git push -f localrepo2 B1
+
+iii. To Know the file status in git
+-> git status
+* It is red->need to move to staging area
+* It is green->File is already in staging area
+
+iv. To add files to git
+-> git add -A
+-> git commit -m "file.txt"
+
+v. Go back to master branch
+-> git checkout master
+
+vi. To bring new updates in master branch
+-> git merge B1
+
+
+STEPS TO DO THE TASK:-
+-->git config --global user.author "chbindukalpana"
+-->git config --global user.email "170031395@kluniversity.in"
+-->pwd
+-->cd desktop
+-->mkdir DemoProject
+-->cd DemoProject
+-->git init
+-->cat sample.txt
+add one line in sample.txt file
+-->git add sample.txt (or) git add .
+-->git status
+-->git commit -m "cbkV1.0"
+-->git status
+-->git log
+add second line in sample.txt file
+-->git add sample.txt (or) git add .
+-->git status
+-->git commit -m "cbkV2.0"
+-->git status
+-->git log
+add third line in sample.txt file
+-->git add sample.txt (or) git add .
+-->git status
+-->git commit -m "cbkV3.0"
+-->git status
+-->git log
+-->git commit --amend -m "cbk3.0"(to change the version name)
+-->git log --oneline
+-->git checkout 58a5a47 sample.txt
+
+OTHER GIT COMMANDS
+->git config --global user.author "chbindukalpana"
+->git config --global user.email "170031395@kluniversity.in"
+->git config --list
+->git init
+->git add sample.txt (or) git add .
+->git status
+->git commit -m "cbkV1.0" or git commit PRESS 'Enter' and PRESS 'i' then insert any data then PRESS ':wq'
+->git commit --amend -m "cbk3.0"
+->git revert hashcode
+->git log --oneline
+->git checkout 58a5a47 sample.txt
+
+2. DAY-2(DISTRIBUTED VERSION CONTROL SYSTEM IN GITLAB)
+1. pwd
+2. cd desktop
+3. mkdir gitlab
+4. cd gitlab
+5. git clone "https://projects.kluniversity.in/170031395_ChBinduKalpana/117_cloud-computing_project.git"
+6. cd 117_cloud-computing_project
+7. create a file with some text by using "notepad filename.txt" or "cat >filename.txt"
+8. git init
+9. git add .
+10. git status
+11. git commit -m "binduv1.0"
+12. git log
+13. git push(Move files from local repository to global repository)
+14. git pull(Move files from global repository to local repository)
+ https://projects.kluniversity.in/170031395_ChBinduKalpana/117_cloud-computing_project.git
+
+1. cd desktop
+2. git clone "https://projects.kluniversity.in/170031395_ChBinduKalpana/117_cloud-computing_project.git"
+3. cd 117_cloud-computing_project
+4. mkdir (foldername)
+5. git init
+6. git add .
+7. git commit -m "message"
+8. git log
+9. git push origin master
+10. git pull
+
